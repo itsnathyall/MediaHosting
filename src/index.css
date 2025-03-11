@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+      --background: 240 10% 3.9%;
+      --foreground: 0 0% 98%;
+      --card: 240 10% 3.9%;
+      --card-foreground: 0 0% 98%;
+      --popover: 240 10% 3.9%;
+      --popover-foreground: 0 0% 98%;
+      --primary: 354 70% 34%;
+      --primary-foreground: 0 0% 98%;
+      --secondary: 240 3.7% 15.9%;
+      --secondary-foreground: 0 0% 98%;
+      --muted: 240 3.7% 15.9%;
+      --muted-foreground: 240 5% 64.9%;
+      --accent: 240 3.7% 15.9%;
+      --accent-foreground: 0 0% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 240 3.7% 15.9%;
+      --input: 240 3.7% 15.9%;
+      --ring: 354 70% 34%;
+      --radius: 0.75rem;
+    }
+  
+    /* * {
+      @apply border-border selection:bg-red-900/20 selection:text-red-100;
+    }
+    
+    body {
+      @apply bg-background text-foreground antialiased overflow-x-hidden;
+      font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    }
+  
+    html {
+      @apply scroll-smooth;
+    } */
+  }
+  
+  @layer utilities {
+    .scrollbar-none {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .glass-morphism {
+      @apply backdrop-blur-lg bg-black/40 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)];
+    }
+    
+    .neo-blur {
+      @apply backdrop-blur-xl bg-black/50 border border-white/10;
+    }
+    
+    .text-gradient-red {
+      @apply bg-gradient-to-br from-red-500 via-red-600 to-red-800 bg-clip-text text-transparent;
+    }
+    
+    .bg-gradient-dark {
+      @apply bg-gradient-to-br from-black via-[#120303] to-[#1a0000];
+    }
+    
+    .animation-delay-100 {
+      animation-delay: 0.1s;
+    }
+    
+    .animation-delay-200 {
+      animation-delay: 0.2s;
+    }
+    
+    .animation-delay-300 {
+      animation-delay: 0.3s;
+    }
+    
+    .animation-delay-400 {
+      animation-delay: 0.4s;
+    }
+    
+    .animation-delay-500 {
+      animation-delay: 0.5s;
+    }
+  }
+  
