@@ -1,6 +1,6 @@
 import React from 'react'
 import FloatingLabelInput from "../components/FloatingLabelInput";
-
+import LoginButton from '../components/LoginButton';
 
 export default function LoginPage(){
 
@@ -13,7 +13,7 @@ export default function LoginPage(){
           <h1 className="text-5xl font-bold text-gray-200">Welcome back</h1>
           <FloatingLabelInput label="Email" type="email" id="email" name="email" />
           <FloatingLabelInput label="Password" type="password" id="password" name="password" />
-          <button className='px-10 py-2 text-2xl rounded-md text-gray-200 bg-red-900'>Login</button>
+          <LoginButton/>
       </div>
     </div>
   </div>
