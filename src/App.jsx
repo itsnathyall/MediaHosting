@@ -1,23 +1,16 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./index.css";
-import LoginPage from "./pages/LoginPage.jsx";
-import RegisteryPage from "./pages/RegisteryPage.jsx"
-import WelcomePage from "./pages/WelcomePage.jsx";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom'; // No Router here
+import WelcomePage from './pages/WelcomePage';
+import LoginPage from './pages/LoginPage';
+import RegisteryPage from './pages/RegisteryPage'
 
 function App() {
   return (
-    
-    <>
-
-      <WelcomePage/>
-      {/* <Router>
-        <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/register" element={<RegisteryPage />} />
-        </Routes>
-      </Router> */}
-    </>
+    <Routes>
+      <Route path="/" element={<WelcomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisteryPage />} />
+    </Routes>
   );
 }
 
