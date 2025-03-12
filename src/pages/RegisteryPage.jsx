@@ -1,6 +1,6 @@
 import React from 'react'
 import FloatingLabelInput from "../components/FloatingLabelInput";
-import LoginButton from '../components/LoginButton';
+import RegisterButton from '../components/RegisterButton';
 
 export default function LoginPage(){
 
@@ -10,17 +10,15 @@ export default function LoginPage(){
     flex items-center justify-center font-mono">
     <div className="flex shadow-2xl">
       <div className="flex flex-col items-center justify-center text-center p-20 gap-8 bg-black/30 rounded-2xl">
-          <h1 className="text-5xl font-bold text-gray-200">Welcome to Nathflix!</h1>
+          <h1 className="text-5xl font-bold text-gray-200">Join Nathflix today!</h1>
+          <FloatingLabelInput label="Full Name" type="text" id="text" name="text" />
           <FloatingLabelInput label="Email" type="email" id="email" name="email" />
           <FloatingLabelInput label="Password" type="password" id="password" name="password" />
-          <LoginButton/>
-          <p className='font-semibold text-gray-300'>Don't have an 
-            account yet? <a href='' className='inline-block 
+          <RegisterButton/>
+          <p className='font-semibold text-gray-300'>Already have 
+            an account? <a href='#' className='inline-block 
             text-red-800 hover:underline active:scale-95 transition-transform
-            active:text-red-500'>Register now!</a></p>
-            <a href='#' className='inline-block 
-            text-red-800 hover:underline active:scale-95 transition-transform
-            active:text-red-500 font-semibold'>Forgot password?</a>
+            active:text-red-500'>Sign in!</a></p>
       </div>
     </div>
   </div>

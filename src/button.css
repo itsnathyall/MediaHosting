@@ -1,5 +1,5 @@
-.glitch,
-.glitch::after {
+#glitch,
+#glitch::after {
  padding: 16px 20px;
  font-size: 18px;
  background: linear-gradient(45deg, transparent 5%, #490010 5%);
@@ -12,7 +12,7 @@
  position: relative;
 }
 
-.glitch::after {
+#glitch::after {
  --slice-0: inset(50% 50% 50% 50%);
  --slice-1: inset(80% -6px 0 0);
  --slice-2: inset(50% -6px 30% 0);
@@ -31,7 +31,7 @@
  clip-path: var(--slice-0);
 }
 
-.glitch:hover::after {
+#glitch:hover::after {
  animation: 1s glitch;
  animation-timing-function: steps(2, end);
 }
