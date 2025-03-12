@@ -1,6 +1,7 @@
 import React from 'react'
 import FloatingLabelInput from "../components/FloatingLabelInput";
 import RegisterButton from '../components/RegisterButton';
+import { Link } from 'react-router-dom';
 
 export default function LoginPage(){
 
@@ -15,10 +16,15 @@ export default function LoginPage(){
           <FloatingLabelInput label="Email" type="email" id="email" name="email" />
           <FloatingLabelInput label="Password" type="password" id="password" name="password" />
           <RegisterButton/>
-          <p className='font-semibold text-gray-300'>Already have 
-            an account? <a href='#' className='inline-block 
-            text-red-800 hover:underline active:scale-95 transition-transform
-            active:text-red-500'>Sign in!</a></p>
+          <p className="font-semibold text-gray-300">
+            Already have an account?{" "}
+            <Link
+              to="/"
+              className="inline-block text-red-800 hover:underline active:scale-95 transition-transform active:text-red-500"
+            >
+              Sign in!
+            </Link>
+          </p>
       </div>
     </div>
   </div>
