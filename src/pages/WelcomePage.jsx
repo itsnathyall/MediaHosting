@@ -56,6 +56,8 @@ export default function WelcomePage(){
                         </div>
                     </div>
                 </div>
+                <CustomButton text='Homepage' onClick={() => navigate('/home')}/>
+
             </div>
         </>
     )
